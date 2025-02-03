@@ -1,18 +1,30 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 90px;
+    width: 100px;
+    padding-top: 8px;
 }
 
 .navbar {
-    background-color: rgb(116, 116, 175);
-    padding: 30px;
+    background-image: linear-gradient(to right ,white,rgb(98, 98, 163));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
-    margin-left: 800px;
+    align-items: center;
+    width: 800px;
+    margin-left: 750px;
+    margin-right: 40px;
 }
 
 .nav-links li a {
@@ -22,14 +34,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-links li {
-    padding-top: 10px;
-}
 
 .nav-links li :hover {
     color: black;
     padding: 10px;
     background-color: rgb(165, 192, 201);
+    transition: o.3s color ease-in;
 }
 
 #banner_img {
