@@ -25,7 +25,6 @@
             height: auto;
             padding-bottom: 25px;
             padding-top: 25px;
-            background-image: linear-gradient(to right, white, rgb(180, 215, 228));
 
         }
 
@@ -40,6 +39,7 @@
             box-shadow: 3px 3px 3px;
             padding-bottom: 5px;
             border-radius: 6px;
+            background-color: rgb(180, 215, 228);
         }
 
         button {
@@ -63,7 +63,7 @@
             gap: 10px;
             padding: 10px;
             justify-content: space-evenly;
-            background-image: linear-gradient(to right, white, rgb(180, 215, 228));
+            /* background-image: linear-gradient(to right, white, rgb(180, 215, 228)); */
 
         }
 
@@ -77,7 +77,7 @@
             border: 1px solid black;
             border-radius: 100px;
             height: auto;
-            background-color: rgb(180, 215, 228);
+            background-image: linear-gradient(white,rgb(180, 215, 228));
         }
 
         .left-section,
@@ -91,6 +91,7 @@
             box-shadow: 3px 3px 3px;
             padding-bottom: 5px;
             border-radius: 6px;
+            background-color: rgb(180, 215, 228);
         }
 
         .checked {
@@ -105,7 +106,7 @@
             height: auto;
             padding: 30px;
             align-items: center;
-            background-image: linear-gradient(to right, white, rgb(180, 215, 228));
+            /* background-image: linear-gradient(to right, white, rgb(180, 215, 228)); */
 
         }
 
@@ -116,6 +117,8 @@
             gap: 30px;
             justify-content: space-evenly;
             padding-bottom: 30px;
+            /* background-color: gray; */
+            background-image: linear-gradient( white , rgb(180, 215, 228));
         }
 
         .foot-links {
@@ -128,15 +131,26 @@
             gap: 30px;
         }
 
+        .foot-links {
+            background-color: rgb(180, 215, 228);
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px;
+        }
+
         .foot-links li a {
             text-decoration: none;
             font-size: 22px;
-            color: black;
+            color: Black;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 
-<body style="background-image: linear-gradient(to right, white , rgb(180, 215, 228));">
+<body style="background-image: url(/images/rent_1.jpg); background-repeat:repeat; background-size: 100% 100%; background-attachment: fixed;">
     <header id="head">
         <nav class="navbar">
             <a href="index.html">
@@ -159,7 +173,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
         <one-section>
             <div style="position: absolute; top:130px; left: 550px; word-spacing: 10px; letter-spacing: 10px;">
                 <p style="font-size: 50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ;">
@@ -169,10 +183,10 @@
                     FOR</p>
             </div>
             <div style="height: 650px;">
-                <img src="/images/rent_1.avif" alt="" height="650px" width="100%" usemap="#book">
+                <!-- <img src="/images/rent_1.avif" alt="" height="650px" width="100%" usemap="#book">
                 <map name="book">
                     <area shape="rect" coords="130 250 1450 410" href="/Bookings.html" alt="">
-                </map>
+                </map> -->
             </div>
             <div style="position: absolute; top:540px; left: 450px;">
                 <input type="text" name="" id="search" placeholder="Search Vehicle Type"
@@ -183,9 +197,12 @@
         <two-section>
             <div class="container">
                 <div style="width: 100%; margin-top: 20px;">
-                    <h1>
-                        <center> Featured Vehicles </center>
-                    </h1>
+                    <center>
+                        <h1
+                            style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                            Featured Vehicles
+                        </h1>
+                    </center>
                 </div>
                 <div class="divs">
                     <img src="/images/car1.jpg" alt="">
@@ -267,7 +284,9 @@
             <div class="container-2">
                 <div style="width: 100%; padding: 25px;">
                     <center>
-                        <h1>Why Choose Us ?</h1>
+                        <h1
+                            style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                            Why Choose Us ?</h1>
                     </center>
                 </div>
                 <div class="left-section">
@@ -281,11 +300,11 @@
                         </li>
                         <p>Book your vehicle in just a few clicks with our user-friendly platform."</p><br>
                         <li>
-                            <h2>Environmentally Friendly Options</h2>
+                            <h2><i class="fa-solid fa-seedling"></i> Environmentally Friendly Options</h2>
                         </li>
                         <p>Choose from our range of eco-friendly vehicles, including electric and hybrid cars.</p><br>
                         <li>
-                            <h2>Fast and Secure Payments</h2>
+                            <h2><i class="fa-solid fa-wallet"></i> Fast and Secure Payments</h2>
                         </li>
                         <p>Secure payment options with instant confirmation for hassle-free bookings.</p><br>
                     </ul>
@@ -293,19 +312,19 @@
                 <div class="right-section">
                     <ul>
                         <li>
-                            <h2>Positive Customer Reviews</h2>
+                            <h2><i class="fa fa-star "></i> Positive Customer Reviews</h2>
                         </li>
                         <p>Rated 4.8/5 by thousands of satisfied customers.</p><br>
                         <li>
-                            <h2>No Deposit Required</h2>
+                            <h2><i class="fa-solid fa-money-bill-transfer"></i> No Deposit Required</h2>
                         </li>
                         <p>Enjoy zero deposit requirements on most vehicles</p><br>
                         <li>
-                            <h2>Free Cancellation</h2>
+                            <h2><i class="fa-solid fa-xmark"></i> Free Cancellation</h2>
                         </li>
                         <p>Cancel or modify your booking for free up to 24 hours before pickup.</p><br>
                         <li>
-                            <h2>Get Your Own Modified Vehicle</h2>
+                            <h2><i class="fa-solid fa-gear"></i> Get Your Own Modified Vehicle</h2>
                         </li>
                         <p>You can tell us which type of vehicle you wants any type of customization vehcile</p><br>
                     </ul>
@@ -315,9 +334,11 @@
         <forth-section>
             <div class="container">
                 <div style="width: 100%; margin-top: 20px;">
-                    <h1>
-                        <center> Testimonials </center>
-                    </h1>
+                    <center>
+                        <h1
+                            style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                            Testimonials </h1>
+                    </center>
                 </div>
                 <div class="divss">
                     <img src="/images/men_1.jpg" alt="men">
@@ -397,7 +418,9 @@
             <div class="container-3">
                 <div style="width: 100%;">
                     <center>
-                        <h1 style="letter-spacing: 3px;"> Offers </h1>
+                        <h1
+                            style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                            Offers </h1>
                     </center>
                 </div>
                 <div style="width: 90%; ">
@@ -415,9 +438,11 @@
     </main>
     <footer class="foot">
         <div style="width: 100%; margin-top: 20px;">
-            <h2>
-                <center> Links </center>
-            </h2>
+            <center>
+                <h1
+                    style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                    Links</h1>
+            </center>
         </div>
         <ul class="foot-links">
             <li class="li"><a href="/Vehicles.html">Vehicles</a>
@@ -436,17 +461,22 @@
             <div style="width: 50%;">
                 <center>
                     <h2>Social Media Links : </h2><br>
-                    <p>www.facebook.com</p><br>
-                    <p>www.twitter.com</p><br>
-                    <p>www.instagram.com</p><br>
-                    <p>www.youtube.com</p><br>
+                    <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" target="blank">
+                        www.facebook.com</a><br><br>
+                    <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/" target="_blank">
+                        www.twitter.com</a><br><br>
+                    <i class="fa-brands fa-instagram"></i><a href="https://instagram.com/" target="_blank">
+                        www.instagram.com</a><br><br>
+                    <i class="fa-brands fa-youtube"></i><a href="https://youtube.com/" target="_blank">
+                        www.youtube.com</a><br><br>
                 </center>
             </div>
             <div style="width: 50%;">
                 <center>
                     <h2> Contact Info : </h2><br><br>
-                    <p><a href="mailto:drivedash@gmail.com">drivedash@gmail.com</a></p><br>
-                    <p><a href="phoneto:+91998876655">+91998876655</a></p><br>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:drivedash@gmail.com"> drivedash@gmail.com</a>
+                    </p><br>
+                    <p><i class="fa-solid fa-phone"></i><a href="phoneto:+91998876655"> +91998876655</a></p><br>
                 </center>
             </div>
         </div>

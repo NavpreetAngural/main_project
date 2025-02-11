@@ -48,7 +48,7 @@
 }
 
 
-}
+
 #p1{
     position: relative;
     left: 33%;
@@ -58,16 +58,6 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(138, 138, 188);
-}
-#div_1{
-    background-image:linear-gradient( white , rgb(180, 215, 228));
-    height: 300px;
-    width: 500px;
-    margin-left: 505px;
-    padding-top: 60px;
-    border-radius: 10px;
-    position: relative;
-    top: 80px;
 }
 
 

@@ -4,12 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Signup Page</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .foot {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-evenly;
+            padding-bottom: 30px;
+            /* background-color: gray; */
+            background-image: linear-gradient(white, rgb(180, 215, 228));
+        }
+
+        .foot-links {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding: 10px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .foot-links {
+            background-color: rgb(180, 215, 228);
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px;
+        }
+
+        .foot-links li a {
+            text-decoration: none;
+            font-size: 22px;
+            color: Black;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup_form {
+            width: 40%;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(180, 215, 228);
+            border-radius: 30px;
+            box-shadow: 2px 2px 2px 2px;
+            padding: 30px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+    </style>
 
 </head>
 
-<body>
+<body style="background-image: url(/images/rent_7.jpg); background-repeat:repeat; background-size: 100% 100%; background-attachment: fixed;">
     <header id="head">
         <nav class="navbar">
             <a href="index.html">
@@ -36,40 +108,83 @@
             <h1 id="h1_1"> Sign Up Page</h1>
         </div>
     </header>
-    <main>
-        <div style="background-image: url(/images/rent_4.jpg); height: 650px; background-size: cover; background-repeat: no-repeat;">
-            <div id="div_1" style="height: 500px; width: 700px ; margin-left: 400px; top: 80px;">
-                <form id="form_1" action="index.html">
-                    <label for="FullName" style="font-size: 20px ; margin-left: 150px;"> Full Name : </label>
-                    <input type="text" name="FullName" id=""
-                        style=" margin-left: 48px; width: 200px; height: 25px; font-size: 18px;"><br><br>
-                    <label for="Email" style="font-size: 20px ; margin-left: 185px;"> Email : </label>
-                    <input type="email" name="Email" id=""
-                        style=" margin-left: 50px; width: 200px; height: 25px; font-size: 18px;"><br><br>
-                    <label for="Password" style="font-size: 20px ;  margin-left: 155px;">Password : </label>
-                    <input type="password" name="Password" id=""
-                        style=" margin-left: 50px; width: 200px; height: 25px; font-size: 18px;"><br><br>
-                    <label for="Mobile" style="font-size: 20px ; margin-left: 140px;"> Contact No : </label>
-                    <input type="digit" name="Mobile" id="" maxlength="10" minlength="10"
-                        style=" margin-left: 50px; width: 200px; height: 25px; font-size: 18px;"><br><br>
-                    <label for="Gender" style="font-size: 20px ; margin-left: 170px;"> Gender : </label>
-                    <input type="radio" name="Gender" id="" style=" margin-left: 80px; font-size: 18px;"> Male
-                    <input type="radio" name="Gender" id="" style=" margin-left: 20px; font-size: 18px;"> Female
+    <!-- <main> -->
+    <main >
+        <div style=" height: 700px; " class="main-1">
+            <form class="signup_form" action="Login.html">
+                <div style=" height: auto;">
+                    <label for="FullName"> Full Name : </label>
+                    <input type="text" name="FullName" id=""><br><br>
+                    <label for="Email"> Email : </label>
+                    <input type="email" name="Email" id="" style="width: 165px; margin-left: 35px;"><br><br>
+                    <label for="Password">Password : </label>
+                    <input type="password" name="Password" id="" style="width: 165px; margin-left: 8px;"><br><br>
+                    <label for="Mobile"> Contact No:</label>
+                    <input type="digit" name="Mobile" id="" maxlength="10" minlength="10" style="width: 165px;"><br><br>
+                    <label for="Gender" style="padding-right: 50px;"> Gender : </label>
+                    <input type="radio" name="Gender" id=""> Male
+                    <input type="radio" name="Gender" id=""> Female
                     <br><br>
-                    <label for="Age" style="font-size: 20px ;  margin-left: 195px;"> Age : </label>
-                    <input type="number" name="Age" id=""
-                        style=" margin-left: 50px; width: 200px; height: 25px; font-size: 18px;"><br><br>
-                    <label for="City" style="font-size: 20px ; margin-left: 195px;"> City : </label>
-                    <input type="text" name="City" id=""
-                        style=" margin-left: 48px; width: 200px; height: 25px; font-size: 18px;"><br><br><br>
-                    <button
-                        style="margin-left: 300px; width: 80px; height: 30px; background-color: rgb(188, 188, 211);">
-                        Signup
-                    </button><br><br><br>
-                </form>
+                    <label for="Age" style="padding-right: 100px;"> Age : </label>
+                    <input type="digit" name="Age" id="" style="width: 50px;;" maxlength="2"><br><br>
+                    <label for="City"> City : </label>
+                    <input type="text" name="City" id="" style="width: 160px;margin-left: 50px;"><br><br>
+                    <center><button
+                            style="width: 60px; height: 25px; border: 2px solid black; font-weight: bold; box-shadow: 2px 2px 2px;">Signup</button>
+                    </center><br>
+                </div>
+            </form>
+    </main>
+    <footer class="foot">
+        <div style="width: 100%; margin-top: 20px;">
+            <center>
+                <h1
+                    style="display: inline; box-shadow: 1px 1px 1px; padding: 8px; background-image: radial-gradient(white , rgb(180, 215, 228)); border-radius: 10px;">
+                    Links</h1>
+            </center>
+        </div>
+        <ul class="foot-links">
+            <li class="li"><a href="/Vehicles.html">Vehicles</a>
+            </li>
+            <li class="li"><a href="/Bookings.html">Bookings</a>
+            </li>
+            <li class="li"><a href="/AboutUs.html">About Us</a>
+            </li>
+            <li class="li"><a href="/ContactUs.html">Contact Us</a>
+            </li>
+            <li class="li">
+                <a href="/Login.html">Login</a>
+            </li>
+        </ul>
+        <div style="width: 100%; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-around;">
+            <div style="width: 50%;">
+                <center>
+                    <h2>Social Media Links : </h2><br>
+                    <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" target="blank">
+                        www.facebook.com</a><br><br>
+                    <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/" target="_blank">
+                        www.twitter.com</a><br><br>
+                    <i class="fa-brands fa-instagram"></i><a href="https://instagram.com/" target="_blank">
+                        www.instagram.com</a><br><br>
+                    <i class="fa-brands fa-youtube"></i><a href="https://youtube.com/" target="_blank">
+                        www.youtube.com</a><br><br>
+                </center>
+            </div>
+            <div style="width: 50%;">
+                <center>
+                    <h2> Contact Info : </h2><br><br>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:drivedash@gmail.com"> drivedash@gmail.com</a>
+                    </p><br>
+                    <p><i class="fa-solid fa-phone"></i><a href="phoneto:+91998876655"> +91998876655</a></p><br>
+                </center>
             </div>
         </div>
-    </main>
+        <div style="width: 100%;">
+            <center>
+                <h6><u>Made by : Navpreet</u> </h6>
+            </center>
+        </div>
+    </footer>
 </body>
 
 </html>
